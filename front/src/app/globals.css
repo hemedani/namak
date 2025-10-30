@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* RTL support */
+html[dir="rtl"] {
+    text-align: right;
+}
+
+/* Custom RTL utilities */
+.rtl\:text-right {
+    text-align: right !important;
+}
+
+.rtl\:float-right {
+    float: right !important;
+}
+
+.rtl\:float-left {
+    float: left !important;
+}
+
+/* Persian typography improvements */
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
