@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        vazir: ['"Vazir"', "sans-serif"],
+        vazir: ['"Vazirmatn"', "sans-serif"],
       },
       colors: {
         "nemak-green": "#2E8B57",
@@ -20,7 +20,6 @@ const config: Config = {
     },
   },
   plugins: [],
-  // Enable RTL support
   prefix: "",
 };
 export default config;

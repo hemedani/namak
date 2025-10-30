@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("/fonts/Vazirmatn[wght].woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --background: #ffffff;
     --foreground: #171717;
@@ -20,7 +28,7 @@
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Vazirmatn", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* RTL support */
